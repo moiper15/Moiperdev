@@ -235,7 +235,6 @@ section:first-of-type .fixed img {
       font-weight: 120;
   }
   .text-blocks p:nth-of-type(even) {
-      justify-self: end;
       text-align: right;
   }
   .text-blocks p:nth-of-type(odd) {
@@ -458,4 +457,82 @@ section:first-of-type .fixed img {
 .paginas {
   background: none;
   text-decoration: none;
+}
+
+/* Responsive  */
+@media screen and (max-width: 768px) {
+  /* Estilos para dispositivos móviles */
+  nav {
+    overflow: visible;
+    display: flex;
+    height: auto; /* Ajusta según sea necesario */
+    padding: 1rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .content {
+    width: 90%;
+    max-width: 100%;
+    padding: 1rem;
+ }
+
+ h1 {
+    font-size: 2rem; /* Ajusta según sea necesario */
+ }
+ h2 {
+  width: 90%;
+  max-width: 100%;
+  padding: 1rem;
+ }
+ .frases {
+  width: auto;
+  max-width: 100%;
+ }
+ .frases1 {
+  width: 70%
+ }
+ .paginas {
+  width: 90%;
+ }
+ p {
+    font-size: 1rem; /* Ajusta según sea necesario */
+ }
+ article .content {
+  width: 90%;
+  max-width: 100%;
+  padding: 1rem;
+ }
+ .skills-list li {
+  width: 100%;
+  margin-bottom: 1rem;
+ }
+ .text-blocks {
+  max-width: 100%;
+} 
+.text-blocks p {
+  font-size: 2rem; /* Ajusta según sea necesario */
+  margin-bottom: 10px; 
+}
+}
+
+
+body {
+  min-height: 100vh;
+  font-family: "Geist Sans", "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif, system-ui;
+  font-weight: 80;
+  background: #2c2c2c;
+  color: hsl(0 0% 90%);
+  /* overflow-x: hidden; */ /* Comenta o elimina esta línea */
+}
+.content {
+  margin: 0 auto;
+  width: 90%; /* Ajusta según sea necesario */
+  max-width: 900px; /* Ajusta según sea necesario */
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  inset: 0;
+  padding: 1rem;
 }
